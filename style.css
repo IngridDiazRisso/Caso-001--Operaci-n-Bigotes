@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+.containertitle {
+  background-color: #5d4837;
+  color: aliceblue;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+.title {
+  font-size: 50px;
+}
+.subtitle {
+  margin-top: 3%;
+}
+.imgarchivos {
+  width: 60%;
+  height: 20vh;
+  display: flex;
+  gap: 25%;
+  justify-content: center;
+}
+.imgportada {
+  width: 100%;
+  height: 65vh;
+  margin-top: -15%;
+}
+.imghuellas {
+  height: 100vh;
+  margin-top: -5%;
+}
+.subheader {
+  margin-top: 10%;
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 3%;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.subheadertitle {
+  margin-left: 15%;
+}
+.containerjugar {
+  background-color: #e3d5c5;
+  height: 100vh;
+}
+.infoTime {
+  padding-top: 2%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  background-image: url(img/info.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 60%;
+  margin-left: 5%;
+}
+.time {
+  display: flex;
+  width: 20%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.timephoto {
+  background-image: url(img/reloj.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+.blanck {
+  width: 100%;
+}
+.chat {
+  margin: 3%;
+  display: flex;
+  height: 20vh;
+}
+.pelusa {
+  height: 50vh;
+}
+
+.chat-left {
+  width: 70%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  border: 3px solid #000;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+}
+
+.chat-left::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #fff;
+}
+
+.chat-left::before {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  left: 28px;
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-top: 23px solid #000;
+}
+
+.kiwi {
+  height: 50vh;
+}
+
+.chat-right {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  border: 3px solid #000;
+  font-size: x-large;
+  width: 60%;
+  margin-left: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.chat-right::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #fff;
+}
+
+.chat-right::before {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  right: 28px;
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-top: 23px solid #000;
+}
+.play {
+  width: 20%;
+  height: 10%;
+  border-radius: 30px;
+  margin: 3% 0% 0% 10%;
+}
