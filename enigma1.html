@@ -17,21 +17,7 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="containertitle">
-        <h2 class="title">UNIDAD FELINA DE</h2>
-        <h2 class="title">INVESTIGACIÓN</h2>
-        <h4 class="subtitle">Caso #001: Operación Bigotes</h4>
-        <div class="imgarchivos">
-          <img class="imgportada" src="img/archivos.png" />
-          <img class="imghuellas imgportada" src="img/huellas.png" />
-        </div>
-      </div>
-      <div class="subheader">
-        <p class="subheadertitle">PELUSA Y KIWI NECESITAN TU AYUDA ⬇</p>
-      </div>
-    </header>
-    <div class="containerjugar">
+    <div class="enigma1">
       <header class="infoTime">
         <div class="info">
           <button id="infobtn"><i class="fa-solid fa-circle-info"></i></button>
@@ -51,26 +37,27 @@
         </div>
         <div class="time">
           <div class="timephoto"></div>
-          <h4>30:00</h4>
+          <h4 id="timer"></h4>
         </div>
         <div class="blanck"></div>
       </header>
-      <div class="chat">
+
+      <button class="chest"><img src="img/cofre (2).png" /></button>
+      <button class="parchment parchment-1">
+        <img src="img/pergamino-2.png" />
+      </button>
+      <button class="parchment parchment-2">
+        <img src="img/pergamino-2.png" />
+      </button>
+      <div class="chat pelusa-pista">
+        <button class="closepista">X</button>
         <img src="img/Pelusa.png" class="pelusa" />
         <div class="chat-left">
-          Hemos detectado actividad sospechosa en la casa. Un caso misterioso
-          está en marcha y solo tú puedes ayudarnos a resolverlo
+          Hemos recibido este SMS: <br />"En esta casa hay una bomba. Si no
+          queréis que explote, encontradla y desactivadla antes de 30 minutos.
+          Para empezar, he dejado tres pistas sobre la mesa. —A.”
         </div>
       </div>
-      <div class="chat">
-        <div class="chat-right">
-          Disponemos de 30 minutos para completar la misión.
-        </div>
-        <img src="img/Kiwi.png" class="kiwi" />
-      </div>
-      <a href="enigma1.html"
-        ><button class="play" id="play" href>JUGAR</button></a
-      >
     </div>
 
     <script src="main.js"></script>
