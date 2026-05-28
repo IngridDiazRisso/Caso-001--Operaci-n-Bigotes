@@ -23,7 +23,7 @@
           <button id="infobtn"><i class="fa-solid fa-circle-info"></i></button>
           <div id="infoBox">
             <div class="info-content">
-              <button id="closeInfo">X</button>
+              <button id="closeInfo" class="close">X</button>
               <h2>Cómo jugar</h2>
               <p>
                 Resuelve los acertijos junto a Kiwi y Pelusa para completar la
@@ -43,14 +43,27 @@
       </header>
 
       <button class="chest"><img src="img/cofre (2).png" /></button>
+      <div class="chestdiv">
+        <button class="close closechest">X</button>
+        <h4>Introduce el codigo</h4>
+        <div class="code">
+          <input type="nunber" class="n n1" />
+          <input type="nunber" class="n n1" />
+          <input type="nunber" class="n n1" />
+        </div>
+        <button class="send">COMPROBAR</button>
+        <button class="send">PISTA</button>
+      </div>
       <button class="parchment parchment-1">
         <img src="img/pergamino-2.png" />
       </button>
+      <div class="parchment1"><button class="closepista1 close">X</button></div>
       <button class="parchment parchment-2">
         <img src="img/pergamino-2.png" />
       </button>
+      <div class="parchment2"><button class="closepista2 close">X</button></div>
       <div class="chat pelusa-pista">
-        <button class="closepista">X</button>
+        <button class="close closepista">X</button>
         <img src="img/Pelusa.png" class="pelusa" />
         <div class="chat-left">
           Hemos recibido este SMS: <br />"En esta casa hay una bomba. Si no

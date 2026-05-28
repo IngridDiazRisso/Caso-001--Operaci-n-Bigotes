@@ -122,19 +122,22 @@ body {
 .info-content h2 {
   margin-bottom: 5%;
 }
-#closeInfo {
-  position: fixed;
-  top: 8%;
-  right: 5%;
+.close {
   background-color: transparent;
   border: none;
   color: white;
   font-size: xx-large;
 }
-#closeInfo:hover {
+.close:hover {
   color: red;
   cursor: pointer;
 }
+#closeInfo {
+  position: fixed;
+  top: 8%;
+  right: 5%;
+}
+
 .time {
   display: flex;
   width: 20%;
@@ -142,6 +145,9 @@ body {
   justify-content: center;
   align-items: center;
   font-size: large;
+}
+#timer {
+  color: #fbfbfb;
 }
 .timephoto {
   background-image: url(img/reloj.png);
@@ -243,6 +249,8 @@ body {
   border-radius: 30px;
   margin: 3% 0% 0% 10%;
 }
+/* ENIGMA 1 */
+
 .enigma1 {
   background-image: url(img/fondo-enigma1.png);
   background-repeat: no-repeat;
@@ -263,6 +271,44 @@ body {
   top: 30%;
   left: 30%;
 }
+.chestdiv {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  border-radius: 5%;
+  background-color: #5d4837ea;
+  backdrop-filter: blur(10px);
+  padding: 5%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: xx-large;
+  color: white;
+}
+.closechest {
+  position: fixed;
+  right: 10%;
+  top: 10%;
+}
+.code {
+  width: 100%;
+}
+.n {
+  height: 15vh;
+  border-radius: 5%;
+  font-size: x-large;
+  background-color: #00000095;
+  border: none;
+  color: white;
+  text-align: center;
+}
+.send {
+  width: 20%;
+  height: 7vh;
+  border-radius: 30px;
+  margin: 3% 0% 0% 0%;
+}
 .parchment {
   background-color: transparent;
   border: none;
@@ -280,6 +326,47 @@ body {
 .parchment :hover {
   cursor: pointer;
 }
+.parchment1 {
+  display: none;
+  background-image: url(img/pista1-enigma1.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  top: 5%;
+  position: fixed;
+  z-index: 2000;
+}
+.closepista1 {
+  display: none;
+  position: fixed;
+  top: 20%;
+  right: 26%;
+  color: #000;
+  font-weight: bold;
+}
+.parchment2 {
+  display: none;
+  background-image: url(img/pista2-enigma1.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  top: 5%;
+  position: fixed;
+  z-index: 2000;
+}
+.closepista2 {
+  display: none;
+  position: fixed;
+  top: 20%;
+  right: 26%;
+  color: #000;
+  font-weight: bold;
+}
+
 .pelusa-pista {
   position: fixed;
   bottom: 25%;
@@ -290,12 +377,10 @@ body {
   cursor: pointer;
 }
 .closepista {
-  background-color: transparent;
-  border: none;
+  color: #000;
   position: fixed;
   top: 42%;
   right: 13%;
-  font-size: x-large;
   z-index: 1000;
   font-weight: bold;
 }

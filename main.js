@@ -64,3 +64,28 @@ pelusa.addEventListener("click", () => {
   pista.style.display = "flex";
   closePista.style.display = "flex";
 });
+
+//BOTONES PISTA1
+const btnparchment1 = document.querySelector(".parchment-1");
+const divparchment1 = document.querySelector(".parchment1");
+const closePista1 = document.querySelector(".closepista1");
+btnparchment1.addEventListener("click", () => {
+  divparchment1.style.display = "flex";
+  closePista1.style.display = "flex";
+});
+closePista1.addEventListener("click", () => {
+  divparchment1.style.display = "none";
+  closePista1.style.display = "none";
+});
+//BOTONES PISTA2
+const btnparchment2 = document.querySelector(".parchment-2");
+const divparchment2 = document.querySelector(".parchment2");
+const closePista2 = document.querySelector(".closepista2");
+btnparchment2.addEventListener("click", () => {
+  divparchment2.style.display = "flex";
+  closePista2.style.display = "flex";
+});
+closePista2.addEventListener("click", () => {
+  divparchment2.style.display = "none";
+  closePista2.style.display = "none";
+});
