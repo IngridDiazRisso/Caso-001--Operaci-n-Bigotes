@@ -1,3 +1,5 @@
+//localStorage.clear();
+
 //BOTONES INFORMACION
 
 const infoBtn = document.getElementById("infobtn");
@@ -15,7 +17,7 @@ closeInfo.addEventListener("click", () => {
 //TEMPORIZADOR
 
 function iniciarTemporizador() {
-  let tiempoGuardado = localStorage.getItem("tiempoRestante") || 1800;
+  let tiempoGuardado = localStorage.getItem("tiempoRestante") || 300;
 
   let tiempo = parseInt(tiempoGuardado);
 
@@ -41,7 +43,10 @@ function iniciarTemporizador() {
       clearInterval(window.cuentaAtras);
       timerElement.textContent = "00:00";
       localStorage.removeItem("tiempoRestante");
-      alert("¡Se acabó el tiempo, agente!");
+      const sound = new Audio("img/soundexplosion.mp3");
+      sound.volume = 1;
+      sound.play();
+      window.location.href = "explosion.html";
     }
   }, 1000);
 }
@@ -89,3 +94,63 @@ closePista2.addEventListener("click", () => {
   divparchment2.style.display = "none";
   closePista2.style.display = "none";
 });
+const btnchest = document.querySelector(".chest");
+const divchest = document.querySelector(".chestdiv");
+const closechest = document.querySelector(".closechest");
+btnchest.addEventListener("click", () => {
+  divchest.style.display = "flex";
+  closechest.style.display = "flex";
+});
+closechest.addEventListener("click", () => {
+  divchest.style.display = "none";
+  closechest.style.display = "none";
+});
+const send = document.querySelector(".send");
+send.addEventListener("click", () => {
+  let code = 426;
+  const n1 = document.querySelector(".n1").value;
+  const n2 = document.querySelector(".n2").value;
+  const n3 = document.querySelector(".n3").value;
+
+  let codesent = Number(n1 + n2 + n3);
+  console.log(codesent);
+  console.log(n1);
+  console.log(n2);
+  console.log(n3);
+  if (code === codesent) {
+    window.location.href = "pantallafinal.html";
+  } else {
+    alert("Codigo incorrecto");
+  }
+});
+
+const clue1btn = document.querySelector(".clue1btn");
+const textclue1 = document.querySelector(".textclue1");
+const clue2btn = document.querySelector(".clue2btn");
+const textclue2 = document.querySelector(".textclue2");
+const clue3btn = document.querySelector(".clue3btn");
+const textclue3 = document.querySelector(".textclue3");
+const solutionbtn = document.querySelector(".solutionbtn");
+const textsolution = document.querySelector(".textsolution");
+clue1btn.addEventListener("click", () => {
+  textclue1.style.display = "flex";
+  clue2btn.style.display = "block";
+});
+clue2btn.addEventListener("click", () => {
+  textclue2.style.display = "flex";
+  clue3btn.style.display = "block";
+});
+clue3btn.addEventListener("click", () => {
+  textclue3.style.display = "flex";
+  solutionbtn.style.display = "block";
+});
+solutionbtn.addEventListener("click", () => {
+  textsolution.style.display = "flex";
+});
+
+window.onload = () => {
+  const sound = document.getElementById("explosion-sound");
+  sound.volume = 5;
+  sound.play();
+  document.getElementById("explosion-sound").play();
+};

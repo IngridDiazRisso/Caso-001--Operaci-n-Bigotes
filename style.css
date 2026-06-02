@@ -271,21 +271,28 @@ body {
   top: 30%;
   left: 30%;
 }
+
 .chestdiv {
   position: fixed;
-  top: 10%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centrado perfecto */
+  width: 80%;
+  max-height: 80vh; /* límite de altura */
+  overflow-y: auto; /* scroll interno */
   border-radius: 5%;
   background-color: #5d4837ea;
   backdrop-filter: blur(10px);
-  padding: 5%;
+  padding: 3%;
   z-index: 1000;
   display: flex;
   flex-direction: column;
   gap: 30px;
   font-size: xx-large;
   color: white;
+  display: none;
 }
+
 .closechest {
   position: fixed;
   right: 10%;
@@ -303,7 +310,9 @@ body {
   color: white;
   text-align: center;
 }
-.send {
+.send,
+.clue,
+.solutionbtn {
   width: 20%;
   height: 7vh;
   border-radius: 30px;
@@ -318,6 +327,7 @@ body {
   position: fixed;
   top: 37%;
   left: 47%;
+  transform: translate(-50%, -50%);
 }
 .parchment-2 img {
   top: 42%;
@@ -334,9 +344,11 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 90vh;
-  top: 5%;
+  /* top: 5%; */
   position: fixed;
   z-index: 2000;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .closepista1 {
   display: none;
@@ -345,6 +357,7 @@ body {
   right: 26%;
   color: #000;
   font-weight: bold;
+  transform: translate(-50%, -50%);
 }
 .parchment2 {
   display: none;
@@ -387,4 +400,92 @@ body {
 .closepista:hover {
   color: red;
   cursor: pointer;
+}
+
+.send:hover,
+.play:hover,
+.clue:hover {
+  background-color: #5d4837;
+  color: white;
+  border: 5px white solid;
+  cursor: pointer;
+}
+
+.textclue1,
+.clue2btn,
+.textclue2,
+.clue3btn,
+.textclue3,
+.solutionbtn,
+.textsolution {
+  display: none;
+}
+.textclue1,
+.textclue2,
+.textclue3,
+.textsolution {
+  font-size: large;
+  text-transform: uppercase;
+  margin-top: 2%;
+}
+.solutionbtn {
+  background-color: red;
+}
+.solutionbtn:hover {
+  border: 5px white solid;
+  cursor: pointer;
+}
+
+.explosion-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: url("img/explosiongif.gif");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  z-index: 5000;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+.final-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: url("img/fondoganador.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  z-index: 5000;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+.final-content {
+  background-color: #00000094;
+  padding: 3%;
+  border-radius: 10px;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 3%;
 }
