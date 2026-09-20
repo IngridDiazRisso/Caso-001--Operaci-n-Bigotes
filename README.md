@@ -1,5 +1,7 @@
 # Caso 001: Operación Bigotes
 
+![enter image description here](screenshot/inicio.png)
+
 Escape Room interactivo desarrollado con HTML, CSS y JavaScript.
 
 ## Descripción
@@ -15,10 +17,8 @@ Proyecto web basado en un Escape Room donde el usuario debe resolver diferentes 
 - JavaScript
 
 - LocalStorage
-  
 
 ## Funcionalidades
-
 
 - Navegación entre diferentes fases del juego
 
@@ -27,7 +27,6 @@ Proyecto web basado en un Escape Room donde el usuario debe resolver diferentes 
 - Cronómetro de partida
 
 - Persistencia de datos mediante LocalStorage
-
 
 ## Aprendizajes
 
@@ -43,25 +42,24 @@ Durante este proyecto trabajé con:
 
 - Diseño de experiencias interactivas para el usuario
 
-
-
 ## Demo
 
 https://ingriddiazrisso.github.io/Caso-001--Operaci-n-Bigotes/
-
 
 ## Repositorio
 
 https://github.com/IngridDiazRisso/Caso-001--Operaci-n-Bigotes
 
-
 ## Capturas
-
 
 ### Pantalla inicial
 
-screenshot/inicio.png
+![enter image description here](screenshot/pantallaprincipal.png)
 
 ### Escape Room en ejecución
 
-screenshot/juego.png
+![enter image description here](screenshot/iniciojuego.png)
+
+![enter image description here](screenshot/juego.png)
+
+![enter image description here](screenshot/pantallafinal.png)
